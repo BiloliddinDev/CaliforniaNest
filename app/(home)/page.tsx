@@ -10,16 +10,16 @@ import WhatWeBelieve from "./components/WhatWeBelieve";
 import ContactCTA from "./components/ContactCTA";
 
 export default function HomePage() {
-  return (
-    <div className="overflow-x-hidden">
-      <HeroSection />
-      <AboutUs />
-      <OurProcess />
-      <WhyChooseUs />
-      <ShowcaseGallery />
-      <VisionAndGoals />
-      <WhatWeBelieve />
-      <ContactCTA />
-    </div>
-  );
+    return (
+        <div className="overflow-x-hidden">
+            <HeroSection/>
+            <AboutUs/>
+            {/*<OurProcess/>*/}
+            {/*<WhyChooseUs/>*/}
+            {/*<ShowcaseGallery/>*/}
+            <VisionAndGoals/>
+            <WhatWeBelieve/>
+            <ContactCTA/>
+        </div>
+    );
 }

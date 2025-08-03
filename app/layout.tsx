@@ -1,44 +1,49 @@
-import type { Metadata } from "next";
+import type {Metadata} from "next";
 import "./globals.css";
 import Footer from "@/components/shared/footer/footer";
 import Navbar from "@/components/shared/navbar/enhanced-navbar";
 import ScrollProgress from "@/components/shared/scroll-progress";
 import GsapLoader from "@/components/shared/gsap-loader";
-import { geistMono, geistSans } from "@/lib/fonts";
+import {geistMono, geistSans} from "@/lib/fonts";
 import React from "react";
+import {Analytics} from "@vercel/analytics/next"
+import favicon from '@/public/image/icon.png'
 
 export const metadata: Metadata = {
-  title: "California Nest",
-  description: "Designing Homes with Heart - Modern Home Design Agency",
+    title: "California Nest",
+    description: "Designing Homes with Heart - Modern Home Design Agency",
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
+                                       children,
+                                   }: Readonly<{
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" className="scroll-smooth">
-      <head>
-          <title>California nest</title>
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <GsapLoader />
-        <Navbar />
-        <ScrollProgress />
+    return (
+        <html lang="en" className="scroll-smooth">
+        <head>
+            <title>California nest</title>
+            <link rel="icon" href={`${favicon.src}`}/>
+        </head>
+        <body
+            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+        <GsapLoader/>
+        <Navbar/>
+        <ScrollProgress/>
         <main>
-          {children}
+            {children}
         </main>
-        <Footer />
-        
+        <Footer/>
+
+        <Analytics/>
         {/* Cursor blob effect - only on desktop */}
-        <div id="cursor-blob" className="fixed hidden md:block w-64 h-64 bg-custom-blue/5 rounded-full blur-3xl pointer-events-none -z-10" />
-        
+        <div id="cursor-blob"
+             className="fixed hidden md:block w-64 h-64 bg-custom-blue/5 rounded-full blur-3xl pointer-events-none -z-10"/>
+
         <script
-          dangerouslySetInnerHTML={{
-            __html: `
+            dangerouslySetInnerHTML={{
+                __html: `
               // Only initialize cursor effect on desktop
               if (window.innerWidth >= 768) {
                 // Throttle function to limit execution frequency
@@ -64,9 +69,9 @@ export default function RootLayout({
                 }, 16)); // ~60fps
               }
             `
-          }}
+            }}
         />
-      </body>
-    </html>
-  );
+        </body>
+        </html>
+    );
 }

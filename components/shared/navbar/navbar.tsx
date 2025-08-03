@@ -57,9 +57,6 @@ export const Navbar = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
               <NavLink href="#about" label="About" scrolled={scrolled} />
-              <NavLink href="#process" label="Our Process" scrolled={scrolled} />
-              <NavLink href="#why-us" label="Why Choose Us" scrolled={scrolled} />
-              <NavLink href="#team" label="Our Team" scrolled={scrolled} />
               <Link
                 href="#contact"
                 className={`px-6 py-2.5 rounded-full font-medium transition-all duration-300 
@@ -106,9 +103,6 @@ export const Navbar = () => {
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <MobileNavLink href="#about" label="About" onClick={toggleMenu} />
-              <MobileNavLink href="#process" label="Our Process" onClick={toggleMenu} />
-              <MobileNavLink href="#why-us" label="Why Choose Us" onClick={toggleMenu} />
-              <MobileNavLink href="#team" label="Our Team" onClick={toggleMenu} />
               <MobileNavLink href="#contact" label="Contact Us" onClick={toggleMenu} isButton />
             </div>
           </motion.div>

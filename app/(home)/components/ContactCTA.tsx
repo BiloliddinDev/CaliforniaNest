@@ -62,11 +62,11 @@ const ContactCTA = () => {
               className="text-center mb-10"
             >
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-custom-dark mb-6">
-                Let&apos;s Design Your Dream Space
+                Let&apos;s Elevate Your Digital Presence
               </h2>
               <p className="text-custom-dark/70 max-w-2xl mx-auto text-lg">
-                Ready to transform your home into a space that truly reflects your style and meets your needs? 
-                Our team is just a message away.
+                Ready to transform your personal brand into a powerful platform that captivates your audience and opens new opportunities? 
+                Our creative team is just a message away.
               </p>
             </motion.div>
             
@@ -89,7 +89,7 @@ const ContactCTA = () => {
               {isMobile ? (
                 // Simplified buttons for mobile - no hover animations
                 <a 
-                  href="mailto:contact@homedesignagency.com" 
+                  href="mailto:shavkat.shomansurov@calinest.com" 
                   className="px-8 py-4 bg-custom-blue text-white font-semibold rounded-full transition-colors duration-300 flex items-center gap-2 shadow-md w-full justify-center"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -101,7 +101,7 @@ const ContactCTA = () => {
               ) : (
                 // Full animated version for desktop
                 <a 
-                  href="mailto:contact@homedesignagency.com" 
+                  href="mailto:shavkat.shomansurov@calinest.com" 
                   className="px-8 py-4 bg-custom-blue text-white font-semibold rounded-full hover:bg-custom-blue/90 transition-colors duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-transform"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -115,7 +115,7 @@ const ContactCTA = () => {
               {isMobile ? (
                 // Simplified buttons for mobile - no hover animations
                 <a 
-                  href="https://wa.me/1234567890" 
+                  href="https://wa.me/qr/CLOD2UWPWBHSP1" 
                   className="px-8 py-4 bg-white text-custom-dark font-semibold rounded-full border-2 border-custom-blue/30 transition-colors duration-300 flex items-center gap-2 shadow-md w-full justify-center"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
@@ -126,7 +126,7 @@ const ContactCTA = () => {
               ) : (
                 // Full animated version for desktop
                 <a 
-                  href="https://wa.me/1234567890" 
+                  href="https://wa.me/qr/CLOD2UWPWBHSP1" 
                   className="px-8 py-4 bg-white text-custom-dark font-semibold rounded-full border-2 border-custom-blue/30 hover:border-custom-blue transition-colors duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-transform"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">

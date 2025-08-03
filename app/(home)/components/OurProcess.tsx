@@ -58,8 +58,8 @@ const OurProcess = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-custom-dark mb-4">Our Process</h2>
           <div className="w-20 h-1 bg-custom-blue mx-auto mb-8 rounded-full"></div>
           <p className="text-custom-dark/70 max-w-2xl mx-auto">
-            We follow a streamlined process to bring your vision to life, ensuring every detail is 
-            considered and every expectation is exceeded.
+            We follow a strategic process to elevate your digital presence, ensuring your personal brand 
+            resonates authentically with your target audience and drives meaningful engagement.
           </p>
         </motion.div>
         
@@ -95,14 +95,14 @@ const OurProcess = () => {
                   </div>
                 </div>
                 
-                <h3 className="text-xl font-bold text-custom-dark mb-4 text-center md:text-left">Plan</h3>
+                <h3 className="text-xl font-bold text-custom-dark mb-4 text-center md:text-left">Strategy</h3>
                 <p className="text-custom-dark/70 text-center md:text-left">
-                  We start by understanding your vision, preferences, and requirements through detailed consultations.
+                  We begin by understanding your unique voice, audience, and goals through in-depth brand discovery sessions.
                 </p>
                 
                 <div className="mt-6 flex items-center justify-center md:justify-start gap-2 text-custom-blue">
                   <ArrowRight className="w-4 h-4" />
-                  <span className="text-sm font-medium">Initial Consultation</span>
+                  <span className="text-sm font-medium">Brand Discovery</span>
                 </div>
               </div>
             </motion.div>
@@ -133,14 +133,14 @@ const OurProcess = () => {
                   </div>
                 </div>
                 
-                <h3 className="text-xl font-bold text-custom-dark mb-4 text-center md:text-left">Design</h3>
+                <h3 className="text-xl font-bold text-custom-dark mb-4 text-center md:text-left">Create</h3>
                 <p className="text-custom-dark/70 text-center md:text-left">
-                  Our creative team develops detailed design concepts and 3D visualizations for your approval.
+                  Our creative team develops compelling visual identity, content frameworks, and storytelling strategies tailored to your brand.
                 </p>
                 
                 <div className="mt-6 flex items-center justify-center md:justify-start gap-2 text-custom-blue">
                   <ArrowRight className="w-4 h-4" />
-                  <span className="text-sm font-medium">Concept Development</span>
+                  <span className="text-sm font-medium">Content Development</span>
                 </div>
               </div>
             </motion.div>
@@ -171,14 +171,14 @@ const OurProcess = () => {
                   </div>
                 </div>
                 
-                <h3 className="text-xl font-bold text-custom-dark mb-4 text-center md:text-left">Deliver</h3>
+                <h3 className="text-xl font-bold text-custom-dark mb-4 text-center md:text-left">Amplify</h3>
                 <p className="text-custom-dark/70 text-center md:text-left">
-                  We execute the approved design with precision, ensuring quality at every step of implementation.
+                  We implement your brand strategy across platforms, optimize for engagement, and provide analytics to measure impact and growth.
                 </p>
                 
                 <div className="mt-6 flex items-center justify-center md:justify-start gap-2 text-custom-blue">
                   <ArrowRight className="w-4 h-4" />
-                  <span className="text-sm font-medium">Final Implementation</span>
+                  <span className="text-sm font-medium">Launch & Optimization</span>
                 </div>
               </div>
             </motion.div>

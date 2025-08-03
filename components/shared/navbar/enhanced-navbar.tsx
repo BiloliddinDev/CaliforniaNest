@@ -81,10 +81,10 @@ const Navbar = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
               <NavLink href="#about" label="About" scrolled={scrolled} isActive={activeSection === "about"} />
-              <NavLink href="#process" label="Our Process" scrolled={scrolled} isActive={activeSection === "process"} />
-              <NavLink href="#showcase" label="Our Work" scrolled={scrolled} isActive={activeSection === "showcase"} />
-              <NavLink href="#why-us" label="Why Us" scrolled={scrolled} isActive={activeSection === "why-us"} />
-              <NavLink href="#portfolio" label="Portfolio" scrolled={scrolled} isActive={activeSection === "portfolio"} />
+              <NavLink href="#process" label="Our Vision" scrolled={scrolled} isActive={activeSection === "process"} />
+              <NavLink href="#showcase" label="Our Mission" scrolled={scrolled} isActive={activeSection === "showcase"} />
+              {/*<NavLink href="#why-us" label="Why Us" scrolled={scrolled} isActive={activeSection === "why-us"} />*/}
+              {/*<NavLink href="#portfolio" label="Portfolio" scrolled={scrolled} isActive={activeSection === "portfolio"} />*/}
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

@@ -59,7 +59,7 @@ const WhyChooseUs = () => {
           <div className="w-20 h-1 bg-custom-blue mx-auto mb-8 rounded-full"></div>
           <p className="text-custom-dark/70 max-w-2xl mx-auto">
             We&apos;re committed to excellence in every aspect of our service, providing you with 
-            a design experience that exceeds expectations.
+            a premium branding experience that elevates your digital presence and captivates your audience.
           </p>
         </motion.div>
         
@@ -91,9 +91,9 @@ const WhyChooseUs = () => {
               <Clock className="w-8 h-8 text-custom-blue" />
             </div>
             
-            <h3 className="text-lg font-bold text-custom-dark mb-3">Fast Turnaround</h3>
+            <h3 className="text-lg font-bold text-custom-dark mb-3">Strategic Approach</h3>
             <p className="text-custom-dark/70 text-sm">
-              We understand the value of your time and deliver projects efficiently without compromising on quality.
+              We develop data-driven strategies that align with your unique voice and audience to maximize engagement and growth.
             </p>
             
             {!isMobile ? (
@@ -129,9 +129,9 @@ const WhyChooseUs = () => {
               <Gem className="w-8 h-8 text-custom-blue" />
             </div>
             
-            <h3 className="text-lg font-bold text-custom-dark mb-3">Affordable Pricing</h3>
+            <h3 className="text-lg font-bold text-custom-dark mb-3">Premium Quality</h3>
             <p className="text-custom-dark/70 text-sm">
-              Premium design services at competitive rates with transparent pricing and no hidden costs.
+              Exceptional content and visual assets that reflect the luxury standard your audience expects from influential brands.
             </p>
             
             {!isMobile ? (
@@ -167,9 +167,9 @@ const WhyChooseUs = () => {
               <Palette className="w-8 h-8 text-custom-blue" />
             </div>
             
-            <h3 className="text-lg font-bold text-custom-dark mb-3">Personalized Designs</h3>
+            <h3 className="text-lg font-bold text-custom-dark mb-3">Authentic Storytelling</h3>
             <p className="text-custom-dark/70 text-sm">
-              Every design is tailored to your unique style, preferences, and functional requirements.
+              We craft compelling narratives that showcase your authentic self while strategically positioning your personal brand.
             </p>
             
             {!isMobile ? (
@@ -205,9 +205,9 @@ const WhyChooseUs = () => {
               <Users className="w-8 h-8 text-custom-blue" />
             </div>
             
-            <h3 className="text-lg font-bold text-custom-dark mb-3">Friendly Team</h3>
+            <h3 className="text-lg font-bold text-custom-dark mb-3">Industry Expertise</h3>
             <p className="text-custom-dark/70 text-sm">
-              Our approachable team of experts is dedicated to making your design journey enjoyable and stress-free.
+              Our team of specialists understands the nuances of digital influence and stays ahead of platform algorithms and audience trends.
             </p>
             
             {!isMobile ? (
@@ -233,7 +233,7 @@ const WhyChooseUs = () => {
         >
           <div className="inline-flex items-center gap-2 text-custom-blue">
             <Sparkles className="w-5 h-5" />
-            <span className="font-medium">Trusted by hundreds of homeowners across the country</span>
+            <span className="font-medium">Trusted by influential creators and premium brands worldwide</span>
           </div>
         </motion.div>
       </div>

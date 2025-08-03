@@ -38,24 +38,24 @@ const WhatWeBelieve = () => {
   const valueCards = [
     {
       id: 1,
-      title: "Excellence in Every Detail",
-      description: "We believe that true luxury lies in the meticulous attention to every element of design, creating spaces that are both visually stunning and functionally perfect.",
+      title: "Authenticity Above All",
+      description: "We believe that true influence lies in genuine connection with your audience, creating content that resonates on a personal level while maintaining your unique voice and values.",
       color: "from-custom-blue to-custom-dark",
       icon: "✧",
       delay: 0.1
     },
     {
       id: 2,
-      title: "Client-First Philosophy",
-      description: "Your vision and satisfaction are our highest priorities. We build lasting partnerships through transparent communication and a deeply collaborative approach.",
+      title: "Creator-First Philosophy",
+      description: "Your vision and growth are our highest priorities. We build lasting partnerships through transparent communication and a deeply collaborative approach to your brand.",
       color: "from-custom-dark to-custom-blue",
       icon: "♢",
       delay: 0.2
     },
     {
       id: 3,
-      title: "Design That Endures",
-      description: "We create timeless spaces that transcend trends, combining innovative techniques with classic principles to deliver designs that remain relevant for years to come.",
+      title: "Influence That Endures",
+      description: "We create sustainable digital presences that transcend trends, combining innovative storytelling with strategic positioning to build brands that remain relevant and impactful.",
       color: "from-custom-blue to-custom-dark",
       icon: "✦",
       delay: 0.3
@@ -84,9 +84,9 @@ const WhatWeBelieve = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-custom-dark mb-4">What We Believe</h2>
           <div className="w-20 h-1 bg-custom-blue mx-auto mb-8 rounded-full"></div>
           <p className="text-custom-dark/80 max-w-2xl mx-auto text-lg leading-relaxed">
-            We believe that exceptional design is born from a perfect balance of artistry and purpose. 
-            Our approach combines innovative thinking with timeless principles to create spaces that 
-            inspire, function flawlessly, and reflect the unique character of each client.
+            We believe that exceptional personal branding is born from the perfect balance of authenticity and strategy. 
+            Our approach combines creative storytelling with data-driven insights to create digital presences that 
+            inspire, engage meaningfully, and reflect the unique voice of each creator.
           </p>
         </motion.div>
         

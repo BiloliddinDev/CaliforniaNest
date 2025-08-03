@@ -44,17 +44,17 @@ const ShowcaseGallery = () => {
     {
       id: 1,
       src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
-      alt: "Modern living room with natural light",
+      alt: "Lifestyle influencer content strategy",
     },
     {
       id: 2,
       src: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=2080&auto=format&fit=crop",
-      alt: "Luxurious master bedroom",
+      alt: "Premium personal brand identity",
     },
     {
       id: 3,
       src: "https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=1964&auto=format&fit=crop",
-      alt: "Elegant dining area",
+      alt: "Visual storytelling campaign",
     },
   ];
 
@@ -75,11 +75,11 @@ const ShowcaseGallery = () => {
           animate={isInView ? "visible" : "hidden"}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-custom-dark mb-4">Our Interior Design Work</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-custom-dark mb-4">Our Brand Transformations</h2>
           <div className="w-20 h-1 bg-custom-blue mx-auto mb-8 rounded-full"></div>
           <p className="text-custom-dark/70 max-w-2xl mx-auto">
-            Explore our portfolio of stunning interior designs that transform houses into beautiful homes.
-            Each project showcases real homes with elegant decorations and stylish interiors tailored to the client&apos;s unique preferences.
+            Explore our portfolio of captivating personal brands that elevate digital presence and audience engagement.
+            Each project showcases authentic storytelling and strategic content creation tailored to the influencer&apos;s unique voice and goals.
           </p>
         </motion.div>
         
@@ -151,7 +151,7 @@ const ShowcaseGallery = () => {
               href="#contact" 
               className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-custom-blue text-white font-medium rounded-full transition-colors duration-300 w-full sm:w-auto"
             >
-              <span>Start Your Project</span>
+              <span>Transform Your Brand</span>
               <ArrowRight className="h-5 w-5" />
             </a>
           ) : (
@@ -160,7 +160,7 @@ const ShowcaseGallery = () => {
               href="#contact" 
               className="inline-flex items-center gap-2 px-8 py-3 bg-custom-blue text-white font-medium rounded-full hover:bg-custom-blue/90 transition-colors duration-300 hover:shadow-lg"
             >
-              <span>Start Your Project</span>
+              <span>Transform Your Brand</span>
               <ArrowRight className="h-5 w-5" />
             </a>
           )}

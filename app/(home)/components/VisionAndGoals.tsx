@@ -42,32 +42,32 @@ const VisionAndGoals = () => {
   const visionCards = [
     {
       id: 1,
-      title: "Modern Design Philosophy",
-      description: "We believe in creating spaces that blend functionality with beauty, focusing on clean lines and thoughtful details.",
+      title: "Authentic Expression",
+      description: "We believe in creating brands that authentically represent your unique voice and vision, focusing on genuine connection with your audience.",
       icon: "✦",
       color: "bg-custom-blue",
       delay: 0.1
     },
     {
       id: 2,
-      title: "Sustainable Approach",
-      description: "Our designs incorporate eco-friendly materials and energy-efficient solutions for a better tomorrow.",
+      title: "Strategic Growth",
+      description: "Our approach combines creative storytelling with data-driven strategies to build sustainable influence and measurable audience growth.",
       icon: "♲",
       color: "bg-custom-dark",
       delay: 0.2
     },
     {
       id: 3,
-      title: "Client-Centered Process",
-      description: "Your vision drives our creativity. We listen carefully to transform your ideas into beautiful realities.",
+      title: "Creator-Centered Process",
+      description: "Your personal brand drives our creativity. We collaborate closely to transform your vision into compelling digital narratives.",
       icon: "♡",
       color: "bg-custom-blue",
       delay: 0.3
     },
     {
       id: 4,
-      title: "Innovation & Creativity",
-      description: "We're constantly exploring new ideas and techniques to bring fresh perspectives to interior design.",
+      title: "Digital Innovation",
+      description: "We&apos;re constantly exploring emerging platforms and content formats to keep your brand at the forefront of digital influence.",
       icon: "✧",
       color: "bg-custom-dark",
       delay: 0.4
@@ -95,7 +95,7 @@ const VisionAndGoals = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-custom-dark mb-4">Our Vision & Goals</h2>
           <div className="w-20 h-1 bg-custom-blue mx-auto mb-8 rounded-full"></div>
           <p className="text-custom-dark/70 max-w-2xl mx-auto">
-            As a new design company, we&apos;re driven by a clear vision and ambitious goals to transform living spaces.
+            As a forward-thinking creative agency, we&apos;re driven by a clear vision and ambitious goals to transform digital presence into influential brands.
           </p>
         </motion.div>
         
@@ -182,10 +182,10 @@ const VisionAndGoals = () => {
             <div className="w-full md:w-2/3">
               <h3 className="text-3xl font-bold gradient-text mb-5">Our Mission</h3>
               <p className="text-custom-dark/80 mb-4 leading-relaxed">
-                We&apos;re on a mission to redefine interior design by making beautiful, functional spaces accessible to everyone. As a new company, we bring fresh perspectives and innovative ideas to every project.
+                We&apos;re on a mission to redefine personal branding by creating authentic, strategic digital presences that resonate with audiences. As a forward-thinking agency, we bring innovative approaches and creative vision to every influencer we partner with.
               </p>
               <p className="text-custom-dark/80 mb-5 leading-relaxed">
-                Our goal is to grow alongside our clients, building lasting relationships while creating spaces that inspire and delight. We may be new, but our passion for design and commitment to excellence drive everything we do.
+                Our goal is to elevate creators to their fullest potential, building lasting partnerships while crafting brands that inspire and engage. Our passion for digital storytelling and commitment to measurable results drive everything we do.
               </p>
               <button className="w-full sm:w-auto px-6 sm:px-8 py-3 bg-custom-blue text-white rounded-lg hover:bg-custom-dark transition-colors duration-300 font-medium mt-4 text-sm sm:text-base flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all">
                 <span>Learn More About Us</span>
