@@ -1,12 +1,12 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { motion, useInView, AnimatePresence } from "framer-motion";
-import { Users, Target, ChartPie, Globe, MessageSquare, BarChart3, ChevronRight, ChevronLeft } from "lucide-react";
+import {useEffect, useRef, useState} from "react";
+import {motion, useInView} from "framer-motion";
+import {BarChart3, ChartPie, Globe, MessageSquare, Target, Users} from "lucide-react";
 
 /**
  * ServicesSection Component
- * 
+ *
  * A responsive section showcasing the company's services with animated cards.
  * Features:
  * - Responsive grid layout (1 column on mobile, 2 on tablet, 3 on desktop)
@@ -39,51 +39,51 @@ const ServicesSection = () => {
         window.addEventListener('resize', checkMobile);
         return () => window.removeEventListener('resize', checkMobile);
     }, []);
-    
+
     // Function to navigate to next card
     const nextCard = () => {
         setActiveCardIndex((prev) => (prev + 1) % services.length);
     };
-    
+
     // Function to navigate to previous card
     const prevCard = () => {
         setActiveCardIndex((prev) => (prev - 1 + services.length) % services.length);
     };
-    
+
     // Toggle between showing one card or all cards on mobile
     const toggleShowAllCards = () => {
         setShowAllCards(prev => !prev);
     };
 
     const fadeInUp = {
-        hidden: { opacity: 0, y: isMobile ? 20 : 60 },
+        hidden: {opacity: 0, y: isMobile ? 20 : 60},
         visible: {
             opacity: 1,
             y: 0,
-            transition: { duration: isMobile ? 0.3 : 0.6 }
+            transition: {duration: isMobile ? 0.3 : 0.6}
         }
     };
-    
+
     const fadeInLeft = {
-        hidden: { opacity: 0, x: -60 },
+        hidden: {opacity: 0, x: -60},
         visible: {
             opacity: 1,
             x: 0,
-            transition: { duration: 0.6, ease: "easeOut" }
+            transition: {duration: 0.6, ease: "easeOut"}
         }
     };
-    
+
     const fadeInRight = {
-        hidden: { opacity: 0, x: 60 },
+        hidden: {opacity: 0, x: 60},
         visible: {
             opacity: 1,
             x: 0,
-            transition: { duration: 0.6, ease: "easeOut" }
+            transition: {duration: 0.6, ease: "easeOut"}
         }
     };
 
     const staggerContainer = {
-        hidden: { opacity: 0 },
+        hidden: {opacity: 0},
         visible: {
             opacity: 1,
             transition: {
@@ -95,14 +95,14 @@ const ServicesSection = () => {
     };
 
     const serviceCardVariants = {
-        hidden: { opacity: 0, y: 20, scale: 0.95 },
+        hidden: {opacity: 0, y: 20, scale: 0.95},
         visible: {
             opacity: 1,
             y: 0,
             scale: 1,
-            transition: { 
-                type: "spring", 
-                stiffness: 100, 
+            transition: {
+                type: "spring",
+                stiffness: 100,
                 damping: 15,
                 duration: 0.4
             }
@@ -123,32 +123,32 @@ const ServicesSection = () => {
 
     const services = [
         {
-            icon: <Users className="w-12 h-12 text-custom-blue mb-4" />,
+            icon: <Users className="w-12 h-12 text-custom-blue mb-4"/>,
             title: "Influencer Matchmaking",
             description: "We connect your brand with the most relevant and impactful influencers."
         },
         {
-            icon: <Target className="w-12 h-12 text-custom-blue mb-4" />,
+            icon: <Target className="w-12 h-12 text-custom-blue mb-4"/>,
             title: "Marketing Strategy",
             description: "Tailored strategies designed to boost your brand's visibility and growth."
         },
         {
-            icon: <ChartPie className="w-12 h-12 text-custom-blue mb-4" />,
+            icon: <ChartPie className="w-12 h-12 text-custom-blue mb-4"/>,
             title: "Audience Analysis",
             description: "Understand your audience and market trends through data-driven insights."
         },
         {
-            icon: <Globe className="w-12 h-12 text-custom-blue mb-4" />,
+            icon: <Globe className="w-12 h-12 text-custom-blue mb-4"/>,
             title: "Campaign Management",
             description: "We plan, manage, and optimize your influencer campaigns from start to finish."
         },
         {
-            icon: <MessageSquare className="w-12 h-12 text-custom-blue mb-4" />,
+            icon: <MessageSquare className="w-12 h-12 text-custom-blue mb-4"/>,
             title: "Content Creation",
             description: "We help produce content that tells your story and engages your audience."
         },
         {
-            icon: <BarChart3 className="w-12 h-12 text-custom-blue mb-4" />,
+            icon: <BarChart3 className="w-12 h-12 text-custom-blue mb-4"/>,
             title: "Performance Analytics",
             description: "Track and analyze your campaign results to continuously improve your ROI."
         }
@@ -160,7 +160,7 @@ const ServicesSection = () => {
             ref={sectionRef}
             className="py-24 bg-white relative overflow-hidden"
         >
-            
+
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                 <motion.div
                     variants={fadeInUp}
@@ -171,11 +171,12 @@ const ServicesSection = () => {
                     <h2 className="text-3xl md:text-4xl font-bold text-custom-dark mb-4">
                         Our Services
                     </h2>
-                    
-                    <div  className="w-20 h-1 bg-custom-blue mx-auto mb-8 rounded-full"></div>
-                    
+
+                    <div className="w-20 h-1 bg-custom-blue mx-auto mb-8 rounded-full"></div>
+
                     <p className="max-w-2xl mx-auto text-gray-600 text-lg leading-relaxed">
-                        We build and nurture authentic relationships between influencers and their audience to maximize impact.
+                        We build and nurture authentic relationships between influencers and their audience to maximize
+                        impact.
                     </p>
                 </motion.div>
 
@@ -185,9 +186,10 @@ const ServicesSection = () => {
                         {services.map((service, index) => (
                             <div
                                 key={index}
-                                className="bg-white p-8 rounded-xl shadow-md border border-gray-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
+                                className="bg-white text-center p-8 rounded-xl shadow-md border border-gray-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
                             >
-                                <div className="bg-blue-50 p-5 rounded-xl inline-block mb-5 transition-transform duration-300 group-hover:scale-105">
+                                <div
+                                    className="bg-blue-50  p-5 rounded-xl inline-block mb-5 transition-transform duration-300 group-hover:scale-105">
                                     <div className="text-blue-500">
                                         {service.icon}
                                     </div>
@@ -198,7 +200,7 @@ const ServicesSection = () => {
                         ))}
                     </div>
                 )}
-                
+
                 {/* Mobile view - simple grid */}
                 {isMobile && (
                     <div className="grid grid-cols-1 gap-6">

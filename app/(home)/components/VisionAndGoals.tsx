@@ -195,16 +195,16 @@ const VisionAndGoals = () => {
                                 partnerships while crafting brands that inspire and engage. Our passion for digital
                                 storytelling and commitment to measurable results drive everything we do.
                             </p>
-                            <button
-                                className="w-full sm:w-auto px-6 sm:px-8 py-3 bg-custom-blue text-white rounded-lg hover:bg-custom-dark transition-colors duration-300 font-medium mt-4 text-sm sm:text-base flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all">
-                                <span>Learn More About Us</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20"
-                                     fill="currentColor">
-                                    <path fillRule="evenodd"
-                                          d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                                          clipRule="evenodd"/>
-                                </svg>
-                            </button>
+                            {/*<button*/}
+                            {/*    className="w-full sm:w-auto px-6 sm:px-8 py-3 bg-custom-blue text-white rounded-lg hover:bg-custom-dark transition-colors duration-300 font-medium mt-4 text-sm sm:text-base flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all">*/}
+                            {/*    <span>Learn More About Us</span>*/}
+                            {/*    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20"*/}
+                            {/*         fill="currentColor">*/}
+                            {/*        <path fillRule="evenodd"*/}
+                            {/*              d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"*/}
+                            {/*              clipRule="evenodd"/>*/}
+                            {/*    </svg>*/}
+                            {/*</button>*/}
                         </div>
                     </div>
                 </motion.div>
