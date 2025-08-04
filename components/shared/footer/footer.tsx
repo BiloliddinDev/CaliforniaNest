@@ -3,7 +3,7 @@
 import Link from "next/link";
 import {ArrowUp, Home, Mail, Phone} from "lucide-react";
 import Image from "next/image";
-import Logo from  "@/public/image/footer-logo.png"
+import Logo from "@/public/image/footer-logo.png"
 
 export default function Footer() {
     const scrollToTop = () => {
@@ -25,7 +25,7 @@ export default function Footer() {
                     <div>
                         <Link href="/" className="flex items-center mb-8">
                             <Image
-                                width={220}
+                                width={180}
                                 height={80}
                                 src={Logo}
                                 alt="Website Logo"
@@ -58,20 +58,15 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#process"
+                                <Link href="#services"
                                       className="text-custom-light/80 hover:text-white transition-colors">
-                                    Our Process
+                                    Services
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#why-us"
+                                <Link href="#vision"
                                       className="text-custom-light/80 hover:text-white transition-colors">
-                                    Why Choose Us
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#team" className="text-custom-light/80 hover:text-white transition-colors">
-                                    Our Team
+                                    Our Vision
                                 </Link>
                             </li>
                             <li>
@@ -87,11 +82,11 @@ export default function Footer() {
                     <div className={"md:ml-10 ml-0"}>
                         <h3 className="text-lg font-bold mb-6">Our Services</h3>
                         <ul className="space-y-3">
-                            <li className="text-custom-light/80">Interior Design</li>
-                            <li className="text-custom-light/80">Space Planning</li>
-                            <li className="text-custom-light/80">Color Consultation</li>
-                            <li className="text-custom-light/80">Furniture Selection</li>
-                            <li className="text-custom-light/80">3D Visualization</li>
+                            <li className="text-custom-light/80">Influencer Matchmaking</li>
+                            <li className="text-custom-light/80">Marketing Strategy</li>
+                            <li className="text-custom-light/80">Audience Analysis</li>
+                            <li className="text-custom-light/80"> Campaign Management</li>
+                            <li className="text-custom-light/80">Content Creation</li>
                         </ul>
                     </div>
 

@@ -22,7 +22,7 @@ export default function RootLayout({
     return (
         <html lang="en" className="scroll-smooth">
         <head>
-            <title>California nest</title>
+            <title>Calinest</title>
             <link rel="icon" href={`${favicon.src}`}/>
         </head>
         <body
