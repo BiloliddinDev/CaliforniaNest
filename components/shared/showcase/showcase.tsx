@@ -29,6 +29,7 @@ const generateDisperseAnimation = () => {
     } as never;
 };
 
+
 const HeroSection = () => {
     const [scrollY, setScrollY] = useState(0);
     const heroRef = useRef<HTMLDivElement>(null);
@@ -148,30 +149,55 @@ const HeroSection = () => {
                         className="mb-6"
                     >
                         <h1 className="text-4xl md:text-6xl lg:text-5xl text-white mt-2 drop-shadow-lg">
-                            We provide quality of service between influencers and brands
+                            We deliver top-tier services to bridge the gap between content creators and business owners.
                         </h1>
                     </motion.div>
 
                     {/* Particle Typing Effect */}
                     <div className="min-h-[60px] flex flex-wrap justify-center items-center gap-[2px] mb-12">
-                        <AnimatePresence mode="popLayout">
+                        <AnimatePresence mode="wait">
                             {currentText.split("").map((char, i) => (
+                                // Har bir harf animatsiyalanadi
                                 <motion.span
-                                    key={char + i + index}
+                                    key={`${index}-${i}-${char}`}
                                     initial={{opacity: 0, y: 10}}
                                     animate={{opacity: 1, y: 0}}
-                                    exit={generateDisperseAnimation()}
-                                    transition={{delay: i * 0.02}}
-                                    className="text-white text-[clamp(1.5rem,4vw,2.5rem)] font-medium drop-shadow-md inline-block"
-                                    style={{
-                                        margin: "0 1px",
-                                        filter: "blur(0px)"
+                                    exit={{
+                                        opacity: 0,
+                                        scale: [1, 1.3, 0.5],
+                                        y: -20,
+                                        filter: "blur(2px)",
+                                        transition: {duration: 1, ease: "easeInOut"}
                                     }}
+                                    transition={{delay: i * 0.02}}
+                                    className="relative text-white text-[clamp(1.5rem,4vw,2.5rem)] font-medium inline-block"
                                 >
                                     {char === " " ? "\u00A0" : char}
+                                    {/* Dust particles - optional visual sprinkle effect */}
+                                    <span className="absolute top-0 left-0 w-full h-full pointer-events-none">
+                                       {[...Array(3)].map((_, j) => (
+                                           <motion.span
+                                               key={j}
+                                               className="absolute w-[2px] h-[2px] bg-white rounded-full"
+                                               initial={{x: 0, y: 0, opacity: 1}}
+                                               animate={{
+                                                   x: (Math.random() - 0.5) * 20,
+                                                   y: (Math.random() - 0.5) * 20,
+                                                   opacity: 0,
+                                               }}
+                                               transition={{
+                                                   duration: 1,
+                                                   delay: 0.1 + j * 0.05,
+                                                   ease: "easeOut",
+                                               }}
+                                           />
+                                       ))}
+                                    </span>
                                 </motion.span>
+
                             ))}
                         </AnimatePresence>
+
                     </div>
 
                     {/* CTA Button */}
