@@ -79,7 +79,7 @@ export default function Footer() {
                     </div>
 
                     {/* Services */}
-                    <div className={"md:ml-10 ml-0"}>
+                    <div className={""}>
                         <h3 className="text-lg font-bold mb-6">Our Services</h3>
                         <ul className="space-y-3">
                             <li className="text-custom-light/80">Influencer Matchmaking</li>
@@ -98,6 +98,15 @@ export default function Footer() {
                                 <Home className="w-6 h-6 text-custom-blue"/>
                                 <span
                                     className="text-custom-light/80 mt-2"> 3950 constitution ave North Highlands,CA 95660   </span>
+                            </li>
+
+                            <li className="flex items-center gap-3">
+                                <a className={"flex items-center gap-3"} href="mailto:shavkat.shomansurov@calinest.com">
+                                    <Mail className="w-5 h-5 text-custom-blue"/>
+                                    <span className="text-custom-light/80">
+                                shavkat.shomansurov@calinest.com
+                                 </span>
+                                </a>
                             </li>
 
 
@@ -126,14 +135,6 @@ export default function Footer() {
                             </li>
 
 
-                            <li className="flex items-center gap-3">
-                                <a className={"flex items-center gap-3"} href="mailto:shavkat.shomansurov@calinest.com">
-                                    <Mail className="w-5 h-5 text-custom-blue"/>
-                                    <span className="text-custom-light/80">
-                                shavkat.shomansurov@calinest.com
-                                 </span>
-                                </a>
-                            </li>
                         </ul>
                     </div>
                 </div>
