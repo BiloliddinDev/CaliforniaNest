@@ -4,6 +4,7 @@ import {useEffect, useRef, useState} from "react";
 import {motion, useInView} from "framer-motion";
 import {Heart} from "lucide-react";
 import Image from "next/image";
+import AboutIMage from '@/public/image/about-image.png'
 
 const AboutUs = () => {
     const aboutRef = useRef<HTMLDivElement>(null);
@@ -69,17 +70,15 @@ const AboutUs = () => {
                             We craft brands that captivate
                         </h3>
                         <p className="text-custom-dark/80 mb-6 leading-relaxed">
-                            At Luminary Collective, we believe your digital presence should be a powerful extension of
-                            your authentic self.
-                            Our team of creative strategists works closely with you to develop a personal brand
-                            that&apos;s not just visually stunning,
-                            but strategically positioned to connect with your ideal audience.
+                            We are a California-based company dedicated to connecting the right influencers with the
+                            right brands. With a deep understanding of both digital marketing and creative storytelling,
+                            we help businesses grow their presence, increase engagement, and build strong brand
+                            identities.
                         </p>
                         <p className="text-custom-dark/80 mb-8 leading-relaxed">
-                            What sets us apart is our meticulous attention to narrative and our commitment to creating
-                            content that resonates.
-                            We blend artistic vision with data-driven insights to build influential brands that endure
-                            in the digital landscape.
+                            We don’t just match brands with influencers — we build strategies based on real marketing
+                            insights. Through careful analysis and smart planning, we ensure every collaboration leads
+                            to lasting value and measurable growth.
                         </p>
 
                         <div className="flex items-center gap-2 text-custom-blue">
@@ -106,6 +105,7 @@ const AboutUs = () => {
                         animate={isInView ? "visible" : "hidden"}
                         className="relative"
                     >
+                        <Image src={AboutIMage} alt="About Us" width={500} height={500} className="rounded-2xl"/>
                         {/*<div*/}
                         {/*    className="relative bg-custom-lightest p-6 rounded-2xl shadow-lg border border-custom-light/30">*/}
                         {/*    {!isMobile && (*/}
