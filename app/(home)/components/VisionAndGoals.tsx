@@ -66,7 +66,7 @@ const VisionAndGoals = () => {
         {
             id: 4,
             title: "Digital Innovation",
-            description: "We&apos;re constantly exploring emerging platforms and content formats to keep your brand at the forefront of digital influence.",
+            description: "We continuously explore new platforms and content trends to ensure your brand stays ahead in the digital landscape.",
             icon: "✧",
             color: "bg-custom-dark",
             delay: 0.4

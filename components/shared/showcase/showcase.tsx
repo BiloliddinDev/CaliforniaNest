@@ -157,7 +157,6 @@ const HeroSection = () => {
                     <div className="min-h-[60px] flex flex-wrap justify-center items-center gap-[2px] mb-12">
                         <AnimatePresence mode="wait">
                             {currentText.split("").map((char, i) => (
-                                // Har bir harf animatsiyalanadi
                                 <motion.span
                                     key={`${index}-${i}-${char}`}
                                     initial={{opacity: 0, y: 10}}
@@ -173,12 +172,11 @@ const HeroSection = () => {
                                     className="relative text-white text-[clamp(1.5rem,4vw,2.5rem)] font-medium inline-block"
                                 >
                                     {char === " " ? "\u00A0" : char}
-                                    {/* Dust particles - optional visual sprinkle effect */}
                                     <span className="absolute top-0 left-0 w-full h-full pointer-events-none">
                                        {[...Array(3)].map((_, j) => (
                                            <motion.span
                                                key={j}
-                                               className="absolute w-[2px] h-[2px] bg-white rounded-full"
+                                               className="absolute w-[2px] h-[2px]  rounded-full"
                                                initial={{x: 0, y: 0, opacity: 1}}
                                                animate={{
                                                    x: (Math.random() - 0.5) * 20,
